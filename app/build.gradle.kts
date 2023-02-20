@@ -55,6 +55,7 @@ dependencies {
     implementation(Compose.navigation)
     implementation(Compose.viewModelCompose)
     implementation(Compose.activityCompose)
+    implementation(Compose.constraintLayout)
 
     implementation(DaggerHilt.hiltAndroid)
     kapt(DaggerHilt.hiltCompiler)
@@ -80,7 +81,7 @@ dependencies {
     implementation(AndroidX.coreKtx)
     implementation(AndroidX.appCompat)
 
-    implementation(Coil.coilCompose)
+    implementation(Glide.landscapistGlide)
 
     implementation(Google.material)
 
@@ -96,6 +97,8 @@ dependencies {
     implementation(AndroidX.lifecycleRuntimeKtx)
     implementation(AndroidX.lifecycleViewModelKtx)
     implementation(AndroidX.lifecycleLivedataKtx)
+
+    implementation(Accompanist.pager)
 
     kapt(Room.roomCompiler)
     implementation(Room.roomKtx)

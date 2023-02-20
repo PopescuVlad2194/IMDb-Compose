@@ -48,9 +48,15 @@ dependencies {
     implementation Compose.navigation
     implementation Compose.viewModelCompose
     implementation Compose.activityCompose
+    implementation Compose.constraintLayout
 
     kapt DaggerHilt.hiltCompiler
     implementation DaggerHilt.hiltAndroid
+
+    implementation(Accompanist.pager)
+    implementation(Accompanist.pagerIndicators)
+
+    implementation(Glide.landscapistGlide)
 
     testImplementation Testing.junit4 
     testImplementation Testing.junitAndroidExt 

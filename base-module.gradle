@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'dagger.hilt.android.plugin'
+apply plugin: 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
 apply plugin: 'kotlin-parcelize'
 apply plugin: 'kotlin-kapt'
 
@@ -20,6 +21,9 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            buildConfigField "String", "API_KEY", IMDb_KEY
         }
     }
     compileOptions {

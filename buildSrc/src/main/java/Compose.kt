@@ -1,6 +1,6 @@
 object Compose {
-    const val composeVersion = "1.4.0-alpha01"
-    const val composeCompilerVersion = "1.4.0"
+    const val composeVersion = "1.4.0-alpha02"
+    const val composeCompilerVersion = "1.4.0-alpha01"
     const val material = "androidx.compose.material:material:$composeVersion"
     const val ui = "androidx.compose.ui:ui:$composeVersion"
     const val uiToolingPreview = "androidx.compose.ui:ui-tooling-preview:$composeVersion"
@@ -18,4 +18,7 @@ object Compose {
 
     private const val lifecycleVersion = "2.5.1"
     const val viewModelCompose = "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycleVersion"
+
+    private const val constraintVersion = "1.0.1"
+    const val constraintLayout = "androidx.constraintlayout:constraintlayout-compose:$constraintVersion"
 }
